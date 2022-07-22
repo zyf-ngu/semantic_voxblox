@@ -14,3 +14,4 @@ sudo apt-get install ros-kinetic-image-proc
 
 mav-planning
 5.PluginlibFactory: The plugin for class ‘rviz_plugins/Goal3DTool‘ failed to load.
+google rosrun something and source
