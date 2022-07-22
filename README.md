@@ -10,3 +10,7 @@ sudo apt-get install ros-kinetic-image-proc
 
 4.error: expression cannot be used as a function
 把括号改成=true=false；
+
+
+mav-planning
+5.PluginlibFactory: The plugin for class ‘rviz_plugins/Goal3DTool‘ failed to load.
