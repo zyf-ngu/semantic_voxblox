@@ -35,6 +35,15 @@ ORB-SLAM3
     make: *** [all] Error 2
 找不到libboost文件，把系统自带的libboost-system.so，libboost-filesystem.so拷贝到orb-slam的lib文件下。
 https://blog.csdn.net/qq_42703283/article/details/95969737
+3.orbslam3  ‘boost::archive未定义的引用 collect2: error: ld returned 1 exit status
+find_package(Boost COMPONENTS system filesystem serialization REQUIRED)
+include_directories(
+${Boost_INCLUDE_DIRS}
+)
+target_link_libraries(${PROJECT_NAME}
+${Boost_LIBRARIES}
+)
+
 
 mav-planning
 5.PluginlibFactory: The plugin for class ‘rviz_plugins/Goal3DTool‘ failed to load.
