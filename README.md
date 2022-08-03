@@ -48,3 +48,5 @@ ${Boost_LIBRARIES}
 mav-planning
 5.PluginlibFactory: The plugin for class ‘rviz_plugins/Goal3DTool‘ failed to load.
 google rosrun something and source
+
+jbox link: https://jbox.sjtu.edu.cn/l/U1AOYS
