@@ -49,4 +49,10 @@ mav-planning
 5.PluginlibFactory: The plugin for class ‘rviz_plugins/Goal3DTool‘ failed to load.
 google rosrun something and source
 
+glog使用--alsologtostderr参数时报这个错误ERROR:unknown command line flag ‘alsologtostderr’
+
+其实这个问题可以将--alsologtostderr换成GLOG_alsologtostderr=1就可以解决。
+根本这个原因是glog默认依赖gflags。
+
+
 jbox link: https://jbox.sjtu.edu.cn/l/U1AOYS
