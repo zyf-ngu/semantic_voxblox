@@ -56,3 +56,5 @@ glog使用--alsologtostderr参数时报这个错误ERROR:unknown command line fl
 
 
 jbox link: https://jbox.sjtu.edu.cn/l/U1AOYS
+高翔分享ORBSLAM2_with_pointcloud_map安装问题总结
+https://blog.csdn.net/c417469898/article/details/104631814
