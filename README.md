@@ -58,3 +58,12 @@ glog使用--alsologtostderr参数时报这个错误ERROR:unknown command line fl
 jbox link: https://jbox.sjtu.edu.cn/l/U1AOYS
 高翔分享ORBSLAM2_with_pointcloud_map安装问题总结
 https://blog.csdn.net/c417469898/article/details/104631814
+
+
+kimeravio_ros
+1.fatal error: unsupported/Eigen/MatrixFunctions: No such file or directory
+2./home/luo/opencv-3.4.0/opencv_contrib/modules/xfeatures2d/src/boostdesc.cpp:653:20: fatal error: boostdesc_bgm.i: 没有那个文件或目录#include "boostdesc_bgm.i"
+https://blog.csdn.net/weixin_44570248/article/details/118630357
+3.报错2：fatal error: opencv2/xfeatures2d/cuda.hpp: No such file or directory
+类似的，对于以下报错，都可以通过查找文件解决nonfree.hpp
+https://www.cnblogs.com/ZHJ0125/p/12904507.html
