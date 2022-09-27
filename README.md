@@ -71,7 +71,7 @@ https://www.cnblogs.com/ZHJ0125/p/12904507.html
 realsense:问题
 If you see the following error
 
-Err:XX http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo bionic InRelease                                   
+1.Err:XX http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo bionic InRelease                                   
   403  Forbidden [IP: 52.218.36.57 80]
 [...]
 E: Failed to fetch http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo/dists/bionic/InRelease  403  Forbidden [IP: 52.218.36.57 80]
@@ -81,3 +81,4 @@ Remove the offending APT repo and add the new secure repo with:
 
 $ sudo add-apt-repository --remove "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo bionic main" -u
 $ sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo bionic main" -u
+https://forum.hello-robot.com/t/expired-ros-gpg-key-new-realsense-apt-repo/205
