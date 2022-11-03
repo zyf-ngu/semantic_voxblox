@@ -88,6 +88,20 @@ arm64配置
 首先选择比较好的源，首选豆瓣源
 pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com pakege-name
 不成功尝试换其它源
+接着继续根据Could not find a version that satisfies the requirement 安装包名字 查问题
+会提示换成国内的pip源 可以解决问题
+
+方法一：pip install 安装包名字 -i http://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com //豆瓣镜像网站
+
+方法二：pip install 安装包名字 -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com //豆瓣
+
+方法三：pip install 安装包名字 -i https://pypi.tuna.tsinghua.edu.cn/simple/ --trusted-host pypi.tuna.tsinghua.edu.cn //清华大学
+
+还有下面几个国内pip 源，大家可以依次按照上面的方法试下
+
+1)http://mirrors.aliyun.com/pypi/simple/ 阿里云
+2)https://pypi.mirrors.ustc.edu.cn/simple/ 中国科技大学
+3) http://pypi.mirrors.ustc.edu.cn/simple/ 中国科学技术大学
 1.需要安装scipy=1.2.3,pip=20.3.4,protobuf>=3.8;ipyhon=5.10.0;matplotlib=2.1.1;numpy=1.16.6
 1.需要依赖h5py=2.10.0/2.8.0,需要先安装hdf5，然后sudo apt install python-h5py
 https://blog.csdn.net/lai_cheng/article/details/107515404
@@ -95,3 +109,31 @@ https://blog.csdn.net/lai_cheng/article/details/107515404
 不能解决则sudo apt install python-h5py
 2.需要安装keras，依赖h5py，scipy等
 3.安装tensorflow1.5 ，利用whl 
+tensorflow whl文件下载网址（贼快）
+   一、 tensorflow whl文件下载网址：
+
+    1、 https://www.lfd.uci.edu/~gohlke/pythonlibs/ ，网站里有很多python扩展库，但是tensorflow目前最新版本是1.9.0，而我需要的是2.3以上。
+
+　 2、https://pypi.org/project/tensorflow-cpu/#history；CPU版本，自己选择版本平台，但是下载速度太慢了。
+
+     3、https://pypi.org/project/tensorflow/#history；完整版本，自己选择版本平台，下载速度同上。
+
+     4、https://pypi.tuna.tsinghua.edu.cn/simple/tensorflow-cpu/；CPU版本，自己选择版本平台，下载速度可以接受。
+
+     5、https://pypi.tuna.tsinghua.edu.cn/simple/tensorflow/；完整版本，自己选择版本平台，下载速度同上。
+
+     6、https://pub.mirrors.aliyun.com/pypi/simple/tensorflow-cpu/；CPU版本，自己选择版本平台，下载速度快。
+
+　 7、https://pub.mirrors.aliyun.com/pypi/simple/tensorflow/；完整版本，自己选择版本平台，下载速度快。
+
+     8、https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow_cpu-2.3.4-cp36-cp36m-win_amd64.whl；CPU版本，大招，贼快，这才是正确的下载姿势，但是要自己改网址下载对应平台版本。
+
+     9、https://storage.googleapis.com/tensorflow/windows/gpu/tensorflow-2.3.4-cp36-cp36m-win_amd64.whl；完整版本，下载速度同上，同理也要自己改网址下载对应平台版本。
+
+     反正我是选最下面两个下载，太快了！！！
+
+ 
+
+   二、tensorboard whl文件下载网址：
+
+     tensorboard,pip有时也会卡死，下载也是奇慢，选择  https://pypi.tuna.tsinghua.edu.cn/simple/tensorboard/ 下载，1秒钟搞定。
