@@ -82,3 +82,16 @@ Remove the offending APT repo and add the new secure repo with:
 $ sudo add-apt-repository --remove "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo bionic main" -u
 $ sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo bionic main" -u
 https://forum.hello-robot.com/t/expired-ros-gpg-key-new-realsense-apt-repo/205
+
+
+arm64配置
+首先选择比较好的源，首选豆瓣源
+pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com pakege-name
+不成功尝试换其它源
+1.需要安装scipy=1.2.3,pip=20.3.4,protobuf>=3.8;ipyhon=5.10.0;matplotlib=2.1.1;numpy=1.16.6
+1.需要依赖h5py=2.10.0/2.8.0,需要先安装hdf5，然后sudo apt install python-h5py
+https://blog.csdn.net/lai_cheng/article/details/107515404
+报错 https://blog.csdn.net/jingchenlin1996/article/details/87904587
+不能解决则sudo apt install python-h5py
+2.需要安装keras，依赖h5py，scipy等
+3.安装tensorflow1.5 ，利用whl 
