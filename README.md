@@ -108,7 +108,7 @@ https://blog.csdn.net/lai_cheng/article/details/107515404
 报错 https://blog.csdn.net/jingchenlin1996/article/details/87904587
 不能解决则sudo apt install python-h5py
 2.需要安装keras，依赖h5py，scipy等
-3.安装tensorflow1.5 ，利用whl 
+3.安装tensorflow1.5 ，利用whl https://github.com/lhelontra/tensorflow-on-arm/releases?page=2
 tensorflow whl文件下载网址（贼快）
    一、 tensorflow whl文件下载网址：
 
