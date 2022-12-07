@@ -139,7 +139,8 @@ tensorflow whl文件下载网址（贼快）
      tensorboard,pip有时也会卡死，下载也是奇慢，选择  https://pypi.tuna.tsinghua.edu.cn/simple/tensorboard/ 下载，1秒钟搞定。
      
      
-     ImportError: No module named request的解决方法
+   1。  ImportError: No module named request的解决方法
+     （1）改为from six.moves.urllib import request
      环境用的是python 2.7，貌似python3.X的童鞋也会遇到代码中用了import urllib.request 和response = urllib.request.urlopen(url) 后通常会报以下错：
 
 查询了C:\Users\Python27\Lib下的urllib moudle源码，并没有发现request方法，直接是urlopen方法，
@@ -149,3 +150,6 @@ tensorflow whl文件下载网址（贼快）
                                 response= urllib.request.urlopen(url) 改成 
 
                                 response= urllib.urlopen(url)   即可
+                                
+2。mask-rcnn 不显示检测后的图片，只输出原图
+https://blog.csdn.net/qq_29227653/article/details/88414052
